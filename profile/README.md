@@ -2,12 +2,14 @@
 
 We build **Oto** — a B2B automation toolkit that gives AI assistants real tools: company & people intelligence, prospecting, CRM, messaging, French open data, and a structured knowledge base. Everything is exposed over the **Model Context Protocol (MCP)**, so it works across Claude, ChatGPT and other LLMs.
 
-The platform is **composed, not monolithic** — several building blocks are open source.
+The platform is **composed, not monolithic** (and largely **open source** — the product core included).
 
 ### Open source
 
 | Repo | What |
 |------|------|
+| [`oto-backend`](https://github.com/otomata-tech/oto-backend) | **The backend** — encrypted credential vault, orgs, doctrine, monitoring. MCP (`mcp.oto.ninja/mcp`) + REST. The center of the platform. |
+| [`oto-dashboard`](https://github.com/otomata-tech/oto-dashboard) | **Product dashboard** for the backend (Vue 3 + shadcn-vue + Tailwind, Logto PKCE). |
 | [`oto`](https://github.com/otomata-tech/oto) | Architecture doctrine — ADRs + overview |
 | [`oto-core`](https://github.com/otomata-tech/oto-core) | Connector library (`oto.tools`) |
 | [`oto-cli`](https://github.com/otomata-tech/oto-cli) | Business-automation CLI, for humans and agents |
